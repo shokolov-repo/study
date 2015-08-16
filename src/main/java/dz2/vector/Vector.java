@@ -7,8 +7,8 @@ import java.util.Arrays;
  */
 public class Vector {
 
-    final int STARTLENGTH = 10;
-    Object[] arr = new Object[STARTLENGTH];
+    private static final int STARTLENGTH = 10;
+    private Object[] arr = new Object[STARTLENGTH];
     private int numberLinks = 0;
 
     public void removeAll() {

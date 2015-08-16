@@ -51,7 +51,7 @@ public class Matrix {
 
         for (int i = 0; i < matrixSize; i++) {
             for (int j = 0; j < matrixSize; j++) {
-                tmp.set(i, j, calculateValue(m, i, j));
+                tmp.set(i, j, multiplyCells(m, i, j));
             }
         }
         return tmp;
@@ -79,10 +79,7 @@ public class Matrix {
 
     @Override
     public String toString() {
-        return "Matrix{" +
-                "matrixSize=" + matrixSize +
-                ", matrix=" + Arrays.toString(matrix) +
-                '}';
+        return "Matrix{" + "matrixSize=" + matrixSize + Arrays.toString(matrix) +'}';
     }
 
 
@@ -103,7 +100,7 @@ public class Matrix {
 
     }
 
-    private int calculateValue(Matrix m, int i, int j) {
+    private int multiplyCells(Matrix m, int i, int j) {
         int result = 0;
 
         for (int r = 0; r < matrixSize; r++) {

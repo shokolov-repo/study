@@ -25,7 +25,7 @@ public class TestVector {
 
         System.out.println(vector.getNumberLinks());
 
-        System.out.println(vector.arr.length);
+//        System.out.println(vector.arr.length);
 
         System.out.println("link" + vector.get(3));
 

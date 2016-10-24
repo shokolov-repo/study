@@ -16,7 +16,6 @@ import java.util.List;
 public class CSVReaderImpl implements CSVReader {
     Logger logger = Logger.getLogger(CSVReaderImpl.class);
 
-    @Override
     public List<Product> readFromFile(String fileName) {
         List<Product> products = new ArrayList<Product>();
         File file = new File(fileName);
